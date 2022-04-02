@@ -263,7 +263,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  WalkSpeed: 6
+  WalkSpeed: 4
   MovementSpeedMultiplier: 1
   AbilityMovementSpeedMultiplier: 1
   PushSpeedMultiplier: 1
@@ -339,8 +339,8 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  NumberOfJumps: 3
-  JumpHeight: 3
+  NumberOfJumps: 1
+  JumpHeight: 1
   JumpRestrictions: 2
   ResetCameraOffsetOnJump: 0
   CanJumpDownOneWayPlatforms: 1
@@ -370,7 +370,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  RunSpeed: 12
+  RunSpeed: 6
   ReadInput: 1
   AutoRun: 0
   AutoRunThreshold: 0.6
@@ -411,7 +411,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  WallClingingSlowFactor: 0.6
+  WallClingingSlowFactor: 0.099
   RaycastVerticalOffset: 0
   WallClingingTolerance: 0.3
   InputIndependent: 1
@@ -432,7 +432,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  LadderClimbingSpeed: 2
+  LadderClimbingSpeed: 5
   ForceRightFacing: 0
   ForceAnchorToGroundOnExit: 0
 --- !u!114 &11455680
