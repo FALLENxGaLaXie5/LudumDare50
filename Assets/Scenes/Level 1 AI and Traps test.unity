@@ -244,10 +244,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPrefabs:
-  - {fileID: 11485350, guid: 8b5fe889d76e56244b94302fc3a0c248, type: 3}
+  - {fileID: 11485350, guid: 2cb7893972760f24494b01ebcf389b5a, type: 3}
   AutoAttributePlayerIDs: 1
   SceneCharacters: []
-  DebugSpawn: {fileID: 0}
+  DebugSpawn: {fileID: 1546914034}
   CheckpointAttributionAxis: 0
   CheckpointAttributionDirection: 0
   CurrentCheckPoint: {fileID: 0}
@@ -487,6 +487,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7320534299651462444}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1546914034 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 919512090205129432, guid: fd2ccc06e6d24e440b86e004739fd0ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 7320534299651462444}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923a01d66c4618446abb082250646478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1674947919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -599,6 +611,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5866397567895347167, guid: fd2ccc06e6d24e440b86e004739fd0ab,
+        type: 3}
+      propertyPath: ReadInput
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866397567895347167, guid: fd2ccc06e6d24e440b86e004739fd0ab,
+        type: 3}
+      propertyPath: WalkSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7320534298125044389, guid: fd2ccc06e6d24e440b86e004739fd0ab,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -699,5 +721,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5835719442572680793, guid: fd2ccc06e6d24e440b86e004739fd0ab, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fd2ccc06e6d24e440b86e004739fd0ab, type: 3}
