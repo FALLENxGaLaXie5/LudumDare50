@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 11455042}
   - component: {fileID: 11449144}
   - component: {fileID: 11421110}
-  - component: {fileID: 11431242}
   - component: {fileID: 11473620}
   - component: {fileID: 11453748}
   - component: {fileID: 11475426}
@@ -31,6 +30,7 @@ GameObject:
   - component: {fileID: 5892136093182821024}
   - component: {fileID: 114000012565017190}
   - component: {fileID: 8539033872590874452}
+  - component: {fileID: 1509516789896021194}
   m_Layer: 9
   m_Name: Spark Boi
   m_TagString: Player
@@ -322,37 +322,6 @@ MonoBehaviour:
   BlockingConditionStates: 
   DanglingRaycastOrigin: {x: 0.7, y: 0.2, z: 0}
   DanglingRaycastLength: 2
---- !u!114 &11431242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1c1a8bab4d234998bcbc559bb58fa11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  NumberOfJumps: 1
-  JumpHeight: 1
-  JumpRestrictions: 2
-  ResetCameraOffsetOnJump: 0
-  CanJumpDownOneWayPlatforms: 1
-  JumpIsProportionalToThePressTime: 1
-  JumpMinimumAirTime: 0.2
-  JumpReleaseForceFactor: 2
-  CoyoteTime: 0
-  InputBufferDuration: 0.2
-  OneWayPlatformsJumpCollisionOffDuration: 0.3
-  MovingPlatformsJumpCollisionOffDuration: 0.05
-  AirJumpFeedbacks: {fileID: 0}
-  NumberOfJumpsLeft: 0
 --- !u!114 &11473620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,7 +380,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  WallClingingSlowFactor: 0.099
+  WallClingingSlowFactor: 0.785
   RaycastVerticalOffset: 0
   WallClingingTolerance: 0.3
   InputIndependent: 1
@@ -746,14 +715,14 @@ MonoBehaviour:
   RaycastDistance: 1
   DetectionLayerMask:
     serializedVersion: 2
-    m_Bits: 8448
+    m_Bits: 536870912
   Grabbing: 0
   CarryParent: {fileID: 0}
   Carrying: 0
   CarryingID: -1
   CarriedObject: {fileID: 0}
-  ThrowForce: 1
-  RecoilModifier: 1
+  ThrowForce: 2
+  RecoilModifier: 2
   Throwing: 0
 --- !u!114 &5892136093182821024
 MonoBehaviour:
@@ -772,19 +741,19 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  RollDuration: 0.5
+  RollDuration: 1.5
   RollSpeed: 3
   BlockHorizontalInput: 0
   PreventDamageCollisionsDuringRoll: 0
   Aim:
-    AimControl: 2
-    RotationMode: 0
+    AimControl: 1
+    RotationMode: 1
     MinimumAngle: -180
     MaximumAngle: 180
     CurrentAngle: 0
   MinimumInputThreshold: 0.1
   FlipCharacterIfNeeded: 1
-  RollCooldown: 1
+  RollCooldown: 3
   LimitedRolls: 0
   SuccessiveRollsAmount: 1
   SuccessiveRollsLeft: 1
@@ -835,6 +804,37 @@ MonoBehaviour:
   DamageTakenWhenCrushed: 10
   DamageTakenFlickerDuration: 0.2
   DamageTakenInvincibilityDuration: 0.6
+--- !u!114 &1509516789896021194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1c1a8bab4d234998bcbc559bb58fa11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  NumberOfJumps: 1
+  JumpHeight: 4
+  JumpRestrictions: 2
+  ResetCameraOffsetOnJump: 0
+  CanJumpDownOneWayPlatforms: 1
+  JumpIsProportionalToThePressTime: 1
+  JumpMinimumAirTime: 0.1
+  JumpReleaseForceFactor: 2
+  CoyoteTime: 0
+  InputBufferDuration: 0
+  OneWayPlatformsJumpCollisionOffDuration: 0.3
+  MovingPlatformsJumpCollisionOffDuration: 0.05
+  AirJumpFeedbacks: {fileID: 0}
+  NumberOfJumpsLeft: 0
 --- !u!1 &159142
 GameObject:
   m_ObjectHideFlags: 0

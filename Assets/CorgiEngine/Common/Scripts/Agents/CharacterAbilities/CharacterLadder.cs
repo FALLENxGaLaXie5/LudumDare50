@@ -140,7 +140,7 @@ namespace MoreMountains.CorgiEngine
                         lowestPosition = yPosition;
                         lowestLadderIndex = i;
                     }
-
+				
                 }
                 CurrentLadder = _colliders[closestHorizontalIndex].gameObject.MMGetComponentNoAlloc<Ladder>();
                 LowestLadder = _colliders[lowestLadderIndex].gameObject.MMGetComponentNoAlloc<Ladder>();
