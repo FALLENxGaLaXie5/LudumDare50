@@ -16,26 +16,21 @@ GameObject:
   - component: {fileID: 11485350}
   - component: {fileID: 11455042}
   - component: {fileID: 11449144}
-  - component: {fileID: 11462046}
   - component: {fileID: 11421110}
   - component: {fileID: 11431242}
   - component: {fileID: 11473620}
-  - component: {fileID: 11463706}
   - component: {fileID: 11453748}
-  - component: {fileID: 11431628}
   - component: {fileID: 11475426}
-  - component: {fileID: 11433500}
   - component: {fileID: 11444118}
   - component: {fileID: 11455680}
-  - component: {fileID: 114000012565017190}
-  - component: {fileID: 114000010795265024}
-  - component: {fileID: 114000011047386926}
   - component: {fileID: 114000011356687900}
   - component: {fileID: 114522235302448242}
   - component: {fileID: 114408133200064378}
-  - component: {fileID: 114679018816720190}
   - component: {fileID: -4342895061800036961}
-  - component: {fileID: 1608910692237574330}
+  - component: {fileID: 2981555679099787497}
+  - component: {fileID: 5892136093182821024}
+  - component: {fileID: 114000012565017190}
+  - component: {fileID: 8539033872590874452}
   m_Layer: 9
   m_Name: Spark Boi
   m_TagString: Player
@@ -123,7 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultParameters:
     Gravity: -30
-    FallMultiplier: 1
+    FallMultiplier: 1.5
     AscentMultiplier: 1
     MaxVelocity: {x: 100, y: 100}
     SpeedAccelerationOnGround: 20
@@ -308,42 +303,6 @@ MonoBehaviour:
   InATunnel: 0
   MoveCameraTarget: 1
   CameraTargetOffset: {x: 0, y: -3, z: 0}
---- !u!114 &11462046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2bb48ea7e7fc4c0fa43dce17235f4f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  DashDistance: 5
-  DashForce: 30
-  ResetForcesOnExit: 1
-  Aim:
-    AimControl: 2
-    RotationMode: 2
-    MinimumAngle: -180
-    MaximumAngle: 180
-    CurrentAngle: 0
-  MinimumInputThreshold: 0.1
-  FlipCharacterIfNeeded: 1
-  AutoCorrectTrajectory: 1
-  DashCooldown: 0.3
-  LimitedDashes: 0
-  SuccessiveDashAmount: 1
-  SuccessiveDashesLeft: 1
-  SuccessiveDashResetMethod: 0
-  SuccessiveDashResetDuration: 2
-  InvincibleWhileDashing: 0
 --- !u!114 &11421110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,33 +374,6 @@ MonoBehaviour:
   ReadInput: 1
   AutoRun: 0
   AutoRunThreshold: 0.6
---- !u!114 &11463706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d37391d2147a467db78bf732ae24daa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  MovingPlatformsJumpCollisionOffDuration: 0.05
-  ParticleEmitter: {fileID: 19839500}
-  JetpackForce: 2.5
-  JetpackUnlimited: 0
-  JetpackFuelDuration: 5
-  JetpackRefuelCooldown: 1
-  RefuelSpeed: 0.5
-  MinimumFuelRequirement: 0.2
-  JetpackRefueledSfx: {fileID: 0}
-  JetpackFuelDurationLeft: 0
 --- !u!114 &11453748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,25 +394,6 @@ MonoBehaviour:
   HorizontalInputThreshold: 0.5
   MoveCameraTarget: 1
   CameraTargetOffset: {x: 0, y: 6, z: 0}
---- !u!114 &11431628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91c7e9428883e43cc8ce6e26ef802353, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  BufferDurationAfterGrip: 0.3
-  InputBasedGrip: 0
 --- !u!114 &11475426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,27 +415,6 @@ MonoBehaviour:
   RaycastVerticalOffset: 0
   WallClingingTolerance: 0.3
   InputIndependent: 1
---- !u!114 &11433500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eeabffc5d6e694a8287c891288b0a4be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  WallJumpForce: {x: 15, y: 4}
-  ShouldReduceNumberOfJumpsLeft: 1
-  ForceMode: 0
-  ForceFlipTowardsDirection: 1
 --- !u!114 &11444118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -560,81 +452,6 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
---- !u!114 &114000012565017190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46406e788b52547b6b352456466eb58b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  PreventJumpWhenInZone: 1
-  ActivationCooldownDuration: 0
---- !u!114 &114000010795265024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a07c6668aa55403790d27b575279549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  InitialWeapon: {fileID: 0}
-  CanPickupWeapons: 1
-  WeaponAttachment: {fileID: 0}
-  ForceWeaponScaleResetOnEquip: 0
-  ForceWeaponRotationResetOnEquip: 0
-  AutomaticallyBindAnimator: 1
-  AmmoDisplayID: 0
-  ContinuousPress: 0
-  GettingHitInterruptsAttack: 0
-  CanShootFromLadders: 0
-  FaceWeaponDirection: 0
-  InvertHorizontalAimWhenWallclinging: 0
-  BufferInput: 0
-  NewInputExtendsBuffer: 0
-  MaximumBufferDuration: 0.25
-  CurrentWeapon: {fileID: 0}
---- !u!114 &114000011047386926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0677e4e697adcd840b838146b8b282d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  ButtonBased: 0
-  CanPush: 1
-  CanPull: 1
-  PushWhenGroundedOnly: 1
-  DetectionRaycastLength: 0.2
-  MinimumPushSpeed: 0.05
 --- !u!114 &114000011356687900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,29 +700,6 @@ MonoBehaviour:
   TransitionForcesMode: 1
   ResetCharacterStateOnGravityChange: 1
   DrawDebugGravityArrow: 1
---- !u!114 &114679018816720190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f6acc45a765d864ba3d69b6c84471f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  InWater: 0
-  SwimHeight: 3.025
-  SwimAnimationDuration: 0.8
-  WaterEntryEffect: {fileID: 143758, guid: 14f27396ac5b4d84cb17d403de44b8a1, type: 3}
-  WaterExitEffect: {fileID: 143758, guid: 14f27396ac5b4d84cb17d403de44b8a1, type: 3}
-  WaterExitForce: {x: 0, y: 12}
 --- !u!114 &-4342895061800036961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -931,7 +725,90 @@ MonoBehaviour:
   StairsBelowDetectionRaycastOrigin: {x: 0.2, y: 0, z: 0}
   StairsBelowDetectionRaycastLength: 0.2
   StairsBelowLockTime: 0.2
---- !u!114 &1608910692237574330
+--- !u!114 &2981555679099787497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d935b014254b1e498815f17116cac6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  RaycastDirection: {x: 0, y: -1, z: 0}
+  RaycastDistance: 1
+  DetectionLayerMask:
+    serializedVersion: 2
+    m_Bits: 8448
+  Grabbing: 0
+  CarryParent: {fileID: 0}
+  Carrying: 0
+  CarryingID: -1
+  CarriedObject: {fileID: 0}
+  ThrowForce: 1
+  RecoilModifier: 1
+  Throwing: 0
+--- !u!114 &5892136093182821024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d317597e2b47bcb4e80316f1b372d79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  RollDuration: 0.5
+  RollSpeed: 3
+  BlockHorizontalInput: 0
+  PreventDamageCollisionsDuringRoll: 0
+  Aim:
+    AimControl: 2
+    RotationMode: 0
+    MinimumAngle: -180
+    MaximumAngle: 180
+    CurrentAngle: 0
+  MinimumInputThreshold: 0.1
+  FlipCharacterIfNeeded: 1
+  RollCooldown: 1
+  LimitedRolls: 0
+  SuccessiveRollsAmount: 1
+  SuccessiveRollsLeft: 1
+  SuccessiveRollsResetDuration: 2
+--- !u!114 &114000012565017190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46406e788b52547b6b352456466eb58b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  PreventJumpWhenInZone: 1
+  ActivationCooldownDuration: 0
+--- !u!114 &8539033872590874452
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -950,7 +827,7 @@ MonoBehaviour:
   BlockingConditionStates: 
   CrusherLayers:
     serializedVersion: 2
-    m_Bits: 262400
+    m_Bits: 131072
   DetectionDirection: 0
   CrushDetectionSkinWidth: 0.02
   DieWhenCrushed: 1
