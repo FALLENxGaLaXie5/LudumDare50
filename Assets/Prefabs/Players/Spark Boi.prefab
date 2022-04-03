@@ -324,8 +324,8 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  DanglingRaycastOrigin: {x: 0.7, y: 0.2, z: 0}
-  DanglingRaycastLength: 2
+  DanglingRaycastOrigin: {x: 0.2, y: 0.2, z: 0}
+  DanglingRaycastLength: 2.5
 --- !u!114 &11473620
 MonoBehaviour:
   m_ObjectHideFlags: 0
