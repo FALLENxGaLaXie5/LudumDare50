@@ -5,8 +5,8 @@ using Random = UnityEngine.Random;
 
 public class DeteriorateHealth : MonoBehaviour
 {
-    [SerializeField][Range(5f, 15f)] private float minTimeBetweenDeterioration = 10f;
-    [SerializeField][Range(15f, 30f)] private float maxTimeBetweenDeterioration = 25f;
+    [SerializeField] private float minTimeBetweenDeterioration = 10f;
+    [SerializeField] private float maxTimeBetweenDeterioration = 25f;
     [SerializeField] private int deteriorationStepAmount = 5;
     private Health health;
     

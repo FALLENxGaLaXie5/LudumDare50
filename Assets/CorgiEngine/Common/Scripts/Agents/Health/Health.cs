@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using MoreMountains.Tools;
 using MoreMountains.Feedbacks;
+using Random = System.Random;
 
 namespace MoreMountains.CorgiEngine
 {
@@ -12,6 +13,12 @@ namespace MoreMountains.CorgiEngine
     [AddComponentMenu("Corgi Engine/Character/Core/Health")]
     public class Health : MonoBehaviour
     {
+        [SerializeField] Color regenerationFlickerColor = Color.blue;
+        
+        
+        [SerializeField] private int minRegenerationAmount = 5;
+        [SerializeField] private int maxRegenerationAmount = 10;
+        
         /// the current health of the character
         [MMReadOnly] [Tooltip("the current health of the character")]
         public int CurrentHealth;
@@ -226,6 +233,17 @@ namespace MoreMountains.CorgiEngine
             DamageEnabled();
             DisablePostDamageInvulnerability();
             UpdateHealthBar(false);
+        }
+
+
+        public void RegenerateHealth()
+        {
+            SetHealth(CurrentHealth += UnityEngine.Random.Range(minRegenerationAmount, maxRegenerationAmount), gameObject);
+            // We make the character's sprite flicker
+            if (_renderer != null)
+            {
+                StartCoroutine(MMImage.Flicker(_renderer, _initialColor, regenerationFlickerColor, 0.05f, 1f));
+            }
         }
 
         public virtual void StoreInitialPosition()

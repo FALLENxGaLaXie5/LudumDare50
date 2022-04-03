@@ -23,9 +23,11 @@ namespace MoreMountains.CorgiEngine
 		/// the speed of the projectiles
 		[Tooltip("the speed of the projectiles")]
 		public float Speed;
+
 		/// the frequency of the spawns
+		public float minFireRate = 1f;
 		[Tooltip("the frequency of the spawns")]
-		public float FireRate;
+		public float FireRate = 5f;
 		
 		protected float _nextShotInSeconds;
 
@@ -45,13 +47,13 @@ namespace MoreMountains.CorgiEngine
 			if((_nextShotInSeconds -= Time.deltaTime)>0)
 				return;
 				
-			_nextShotInSeconds = FireRate;
+			_nextShotInSeconds = Random.Range(minFireRate, FireRate);
             PathedProjectile projectile = (PathedProjectile) Instantiate(Projectile, transform.position,transform.rotation);
 			projectile.Initialize(Destination,Speed);
 			
 			if (SpawnEffect!=null)
 			{
-				Instantiate(SpawnEffect,transform.position,transform.rotation);
+				//Instantiate(SpawnEffect,transform.position,transform.rotation);
 			}
 		}
 
