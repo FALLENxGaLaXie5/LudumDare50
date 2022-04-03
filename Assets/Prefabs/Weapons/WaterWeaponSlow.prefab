@@ -902,7 +902,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 30
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4859,10 +4859,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d7ce0b8cf4b34859b9e359283b2e7f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TriggerMode: 0
+  TriggerMode: 1
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 1.5
+  TimeBetweenUses: 0.2
   TimeBetweenUsesReleaseInterruption: 1
   Interruptable: 0
   InitializeOnStart: 0
@@ -4947,12 +4947,12 @@ MonoBehaviour:
     Delay: 0
     RecoilFeedback: {fileID: 0}
   ProjectileSpawnTransform: {fileID: 0}
-  ProjectileSpawnOffset: {x: 0.7, y: 0, z: 0}
+  ProjectileSpawnOffset: {x: 0, y: 0, z: 0}
   ProjectilesPerShot: 1
   Spread: {x: 0, y: 0, z: 0}
   RotateWeaponOnSpread: 0
   RandomSpread: 0
-  SpawnPosition: {x: -4.9250145, y: -13.861907, z: 0}
+  SpawnPosition: {x: -5.6250143, y: -13.861907, z: 0}
 --- !u!114 &114587324304491438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5141,7 +5141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c27131831afa28b499cb120fc9059997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Active: 1
+  Active: 0
   Label: Particles Play - Water
   Chance: 100
   Timing:

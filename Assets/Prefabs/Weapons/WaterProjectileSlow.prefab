@@ -100,8 +100,8 @@ MonoBehaviour:
   BoundsBasedOn: 1
   LifeTime: 5
   FaceDirection: 1
-  Speed: 20
-  Acceleration: 9
+  Speed: 50
+  Acceleration: 0
   Direction: {x: -1, y: 0, z: 0}
   DirectionCanBeChangedBySpawner: 1
   FlipValue: {x: -1, y: 1, z: 1}
@@ -126,11 +126,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TargetLayerMask:
     serializedVersion: 2
-    m_Bits: 768
+    m_Bits: 18090752
   DamageCaused: 10
-  DamageCausedKnockbackType: 1
-  DamageCausedKnockbackDirection: 0
-  DamageCausedKnockbackForce: {x: 10, y: 2}
+  DamageCausedKnockbackType: 2
+  DamageCausedKnockbackDirection: 1
+  DamageCausedKnockbackForce: {x: 3, y: 1.5}
   InvincibilityDuration: 0.5
   DamageTakenEveryTime: 10
   DamageTakenDamageable: 5
@@ -1103,7 +1103,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 30
+      scalar: 10
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -1153,8 +1153,66 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    m_BurstCount: 0
-    m_Bursts: []
+    m_BurstCount: 1
+    m_Bursts:
+    - serializedVersion: 2
+      time: 0
+      countCurve:
+        serializedVersion: 2
+        minMaxState: 3
+        scalar: 1
+        minScalar: 0
+        maxCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0.015792847
+            value: 0.7230778
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 0.99368286
+            value: 0.3538456
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        minCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0.7076931
+            inSlope: -3.5767221
+            outSlope: -3.5767221
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0.3828174
+          - serializedVersion: 3
+            time: 0.9873657
+            value: 0.55384636
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+      cycleCount: 0
+      repeatInterval: 0.01
+      probability: 1
   SizeModule:
     enabled: 1
     curve:
