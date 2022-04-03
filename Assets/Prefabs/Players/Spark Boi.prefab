@@ -34,6 +34,7 @@ GameObject:
   - component: {fileID: 6468581836485074289}
   - component: {fileID: 8241108501947295490}
   - component: {fileID: 854254821264085734}
+  - component: {fileID: 7355643658707771405}
   m_Layer: 9
   m_Name: Spark Boi
   m_TagString: Player
@@ -914,6 +915,29 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7355643658707771405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f6acc45a765d864ba3d69b6c84471f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  InWater: 0
+  SwimHeight: 3.025
+  SwimAnimationDuration: 0.8
+  WaterEntryEffect: {fileID: 143758, guid: c289edcaed5a4aa4c8f321bf4558fc61, type: 3}
+  WaterExitEffect: {fileID: 143758, guid: c289edcaed5a4aa4c8f321bf4558fc61, type: 3}
+  WaterExitForce: {x: 0, y: 12}
 --- !u!1 &159142
 GameObject:
   m_ObjectHideFlags: 0

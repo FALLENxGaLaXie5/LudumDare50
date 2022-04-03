@@ -292,10 +292,10 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   RespawnDelay: 2
-  BoundsMode: 1
+  BoundsMode: 0
   LevelBounds:
-    m_Center: {x: -66.05, y: -2.66, z: 0}
-    m_Extent: {x: 43.64, y: 25, z: 5}
+    m_Center: {x: -50, y: 0, z: 0}
+    m_Extent: {x: 70, y: 40, z: 5}
   ConvertToColliderBoundsButton: 0
   LoadingSceneMode: 1
   LoadingSceneName: LoadingScreen
