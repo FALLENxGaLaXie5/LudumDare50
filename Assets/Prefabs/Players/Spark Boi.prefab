@@ -936,10 +936,10 @@ MonoBehaviour:
   BlockingConditionStates: 
   InWater: 0
   SwimHeight: 5
-  SwimAnimationDuration: 0.8
+  SwimAnimationDuration: 1
   WaterEntryEffect: {fileID: 143758, guid: c289edcaed5a4aa4c8f321bf4558fc61, type: 3}
   WaterExitEffect: {fileID: 143758, guid: c289edcaed5a4aa4c8f321bf4558fc61, type: 3}
-  WaterExitForce: {x: 0, y: 12}
+  WaterExitForce: {x: 0, y: 14}
 --- !u!114 &3136957317311963538
 MonoBehaviour:
   m_ObjectHideFlags: 0
