@@ -144,7 +144,7 @@ MonoBehaviour:
   InputType: 2
   InputButton: Interact
   InputKey: 32
-  AnimationTriggerParameterName: 
+  AnimationTriggerParameterName: Activating
   UseVisualPrompt: 1
   ButtonPromptPrefab: {fileID: 114235008137252218, guid: 55c13e6e2eb26cc4ba8c4873f82fb91f,
     type: 3}

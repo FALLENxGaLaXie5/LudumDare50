@@ -38,6 +38,8 @@ namespace MoreMountains.CorgiEngine
         protected const string _activatingAnimationParameterName = "Activating";
         protected int _activatingAnimationParameter;
 
+        private Animator animator;
+
 		/// <summary>
 		/// Gets and stores components for further use
 		/// </summary>
@@ -46,6 +48,7 @@ namespace MoreMountains.CorgiEngine
 			base.Initialization();
 			InButtonActivatedZone = false;
 			ButtonActivatedZone = null;
+			animator = GetComponentInChildren<Animator>();
 		}
 
 		/// <summary>
