@@ -261,6 +261,7 @@ namespace MoreMountains.CorgiEngine
 		/// </summary>
 		protected virtual void StartClimbing()
 		{
+			CurrentLadder.usedLadder = true;
 			if (CurrentLadder.LadderPlatform != null)
 			{
 				if (AboveLadderPlatform()

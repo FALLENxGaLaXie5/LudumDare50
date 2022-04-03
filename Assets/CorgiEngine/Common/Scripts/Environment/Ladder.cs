@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using MoreMountains.Tools;
 
 namespace MoreMountains.CorgiEngine
@@ -30,6 +31,10 @@ namespace MoreMountains.CorgiEngine
 		/// if this is set to true, on Initialization, the LadderPlatform will be automatically repositioned to match the top of the ladder's collider
 		[Tooltip("if this is set to true, on Initialization, the LadderPlatform will be automatically repositioned to match the top of the ladder's collider")]
 		public bool AutoPositionLadderPlatform = false;
+
+		public bool usedLadder = false;
+		public GameObject fireObject;
+		public Transform fireObjectSpawnPoints;
 
 		public BoxCollider2D LadderPlatformBoxCollider2D { get; protected set; }
 		public EdgeCollider2D LadderPlatformEdgeCollider2D { get; protected set; }
@@ -109,7 +114,8 @@ namespace MoreMountains.CorgiEngine
 	    /// </summary>
 	    /// <param name="collider">Something colliding with the ladder.</param>
 	    protected virtual void OnTriggerEnter2D(Collider2D collider)
-		{
+	    {
+		    if (usedLadder) return;
             // we check that the object colliding with the ladder is actually a corgi controller and a character
             CharacterLadder characterLadder = collider.gameObject.MMGetComponentNoAlloc<Character>()?.FindAbility<CharacterLadder>();
             if (characterLadder==null)
@@ -132,7 +138,25 @@ namespace MoreMountains.CorgiEngine
 			{
 				return;					
 			}
-            characterLadder.RemoveCollidingLadder(_collider2D);		
-        }
+            characterLadder.RemoveCollidingLadder(_collider2D);
+            
+            if (usedLadder)
+            {
+	            SpawnFireObject();
+            }
+		}
+
+	    public virtual void SpawnFireObject()
+	    {
+		    if (!fireObject)
+		    {
+			    Debug.Log("No fire object set on this!!");
+		    }
+		    
+		    foreach (Transform child in fireObjectSpawnPoints)
+		    {
+			    Instantiate(fireObject, child);
+		    }
+	    }
 	}
 }

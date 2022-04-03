@@ -70,7 +70,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.08}
+  m_Offset: {x: -0.0047912598, y: -0.072327375}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -81,7 +81,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35, y: 0.6}
+  m_Size: {x: 0.4094696, y: 0.4618926}
   m_EdgeRadius: 0
 --- !u!50 &5049808
 Rigidbody2D:
@@ -741,19 +741,19 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  RollDuration: 1.5
-  RollSpeed: 3
+  RollDuration: 0.5
+  RollSpeed: 2.9
   BlockHorizontalInput: 0
   PreventDamageCollisionsDuringRoll: 0
   Aim:
-    AimControl: 1
-    RotationMode: 1
+    AimControl: 2
+    RotationMode: 0
     MinimumAngle: -180
     MaximumAngle: 180
     CurrentAngle: 0
   MinimumInputThreshold: 0.1
   FlipCharacterIfNeeded: 1
-  RollCooldown: 3
+  RollCooldown: 0.6
   LimitedRolls: 0
   SuccessiveRollsAmount: 1
   SuccessiveRollsLeft: 1
@@ -5974,7 +5974,7 @@ SpriteRenderer:
   m_SortingLayerID: -1628607475
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 435a2d27a31b7e942bf80841ed053ca1, type: 3}
+  m_Sprite: {fileID: -1903932392, guid: b7431329884cbfe4f9d2bc1b1be1805d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

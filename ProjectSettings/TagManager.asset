@@ -8,6 +8,7 @@ TagManager:
   - Music
   - Background
   - NoMask
+  - FirePoint
   layers:
   - Default
   - TransparentFX
