@@ -477,6 +477,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9716d97790a0a49889284ee813194576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  regenerationFlickerColor: {r: 0, g: 0, b: 1, a: 1}
+  minRegenerationAmount: 5
+  maxRegenerationAmount: 10
   CurrentHealth: 0
   InitialHealth: 10
   MaximumHealth: 10
@@ -518,9 +521,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   DamageCaused: 10
-  DamageCausedKnockbackType: 1
-  DamageCausedKnockbackDirection: 1
-  DamageCausedKnockbackForce: {x: 25, y: 2}
+  DamageCausedKnockbackType: 2
+  DamageCausedKnockbackDirection: 0
+  DamageCausedKnockbackForce: {x: 15, y: 2}
   InvincibilityDuration: 0.5
   DamageTakenEveryTime: 0
   DamageTakenDamageable: 0
