@@ -4846,6 +4846,7 @@ Transform:
   - {fileID: 905852444560217142}
   - {fileID: 3007159335921504788}
   - {fileID: 384610175202782352}
+  - {fileID: 2367754597457428006}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4864,8 +4865,8 @@ MonoBehaviour:
   TriggerMode: 0
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 0.8
-  TimeBetweenUsesReleaseInterruption: 1
+  TimeBetweenUses: 0.4
+  TimeBetweenUsesReleaseInterruption: 0
   Interruptable: 0
   InitializeOnStart: 0
   MagazineBased: 0
@@ -4892,7 +4893,7 @@ MonoBehaviour:
   Animators: []
   EquippedAnimationParameter: 
   IdleAnimationParameter: 
-  StartAnimationParameter: 
+  StartAnimationParameter: Firing
   DelayBeforeUseAnimationParameter: 
   SingleUseAnimationParameter: 
   UseAnimationParameter: 
@@ -4948,13 +4949,13 @@ MonoBehaviour:
     RecoilStyle: 2
     Delay: 0
     RecoilFeedback: {fileID: 0}
-  ProjectileSpawnTransform: {fileID: 0}
+  ProjectileSpawnTransform: {fileID: 2367754597457428006}
   ProjectileSpawnOffset: {x: 0.7, y: 0, z: 0}
   ProjectilesPerShot: 1
   Spread: {x: 0, y: 0, z: 0}
   RotateWeaponOnSpread: 0
   RandomSpread: 1
-  SpawnPosition: {x: -4.9250145, y: -13.861907, z: 0}
+  SpawnPosition: {x: -4.7060146, y: -13.667907, z: 0}
 --- !u!114 &114587324304491438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4985,16 +4986,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0514d297deadac74fb15a7b7326ff0d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AimControl: 3
-  RotationMode: 0
-  WeaponRotationSpeed: 1
+  AimControl: 1
+  RotationMode: 2
+  WeaponRotationSpeed: 10
   MinimumAngle: -180
   MaximumAngle: 180
   IgnoreSlopeRotation: 0
-  IgnoreDownWhenGrounded: 0
-  Reticle: {fileID: 0}
-  DisplayReticle: 1
-  ReticleDistance: 0
+  IgnoreDownWhenGrounded: 1
+  Reticle: {fileID: 1000010525066036, guid: fdff91f9c641e4bc4ae800f161c07e1f, type: 3}
+  DisplayReticle: 0
+  ReticleDistance: 4
   ReticleZPosition: 0
   ReticleAtMousePosition: 0
   RotateReticle: 0
@@ -5018,7 +5019,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4000012249117258
 Transform:
   m_ObjectHideFlags: 0
@@ -10024,7 +10025,7 @@ MonoBehaviour:
   Channel: 0
   CameraShakeProperties:
     Duration: 0.2
-    Amplitude: 1
+    Amplitude: 0.3
     Frequency: 0.6
     AmplitudeX: 0
     AmplitudeY: 0
@@ -10069,6 +10070,37 @@ MonoBehaviour:
   FlashDuration: 0.1
   FlashAlpha: 0.1
   FlashID: 0
+--- !u!1 &3820400815142963990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2367754597457428006}
+  m_Layer: 0
+  m_Name: ProjectileSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2367754597457428006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3820400815142963990}
+  m_LocalRotation: {x: -0, y: -0, z: 0.1868212, w: 0.982394}
+  m_LocalPosition: {x: 0.21899986, y: 0.19400024, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4000010674082004}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 21.535}
 --- !u!1 &4477487246383116946
 GameObject:
   m_ObjectHideFlags: 0
