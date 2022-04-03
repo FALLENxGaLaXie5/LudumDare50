@@ -1571,6 +1571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaterDropTrap
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 8659da90ec4fc114a9a33a3f350aac82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 8659da90ec4fc114a9a33a3f350aac82, type: 3}
       propertyPath: m_RootOrder
       value: 0
