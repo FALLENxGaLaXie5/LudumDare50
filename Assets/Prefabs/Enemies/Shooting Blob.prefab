@@ -844,7 +844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: DetectTargetLine
   DetectMethod: 1
-  DetectionDirection: 2
+  DetectionDirection: 0
   RayWidth: 3
   DetectionDistance: 5
   DetectionOriginOffset: {x: 0, y: 1, z: 0}
