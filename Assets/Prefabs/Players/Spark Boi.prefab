@@ -933,7 +933,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   InWater: 0
-  SwimHeight: 3.025
+  SwimHeight: 5
   SwimAnimationDuration: 0.8
   WaterEntryEffect: {fileID: 143758, guid: c289edcaed5a4aa4c8f321bf4558fc61, type: 3}
   WaterExitEffect: {fileID: 143758, guid: c289edcaed5a4aa4c8f321bf4558fc61, type: 3}
