@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SparkBoyJump
+  m_Name: SparkBoyWallCling
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1148199856, guid: 59c06eaf1a1653f40baa64d98d191fb3, type: 3}
+      value: {fileID: 29943443, guid: e3e39e901b8893742be4138aaf7cf1d5, type: 3}
+    - time: 0.16666667
+      value: {fileID: 35930897, guid: e3e39e901b8893742be4138aaf7cf1d5, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -40,13 +42,14 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -1148199856, guid: 59c06eaf1a1653f40baa64d98d191fb3, type: 3}
+    - {fileID: 29943443, guid: e3e39e901b8893742be4138aaf7cf1d5, type: 3}
+    - {fileID: 35930897, guid: e3e39e901b8893742be4138aaf7cf1d5, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.016666668
+    m_StopTime: 0.18333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

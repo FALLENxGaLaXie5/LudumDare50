@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SparkBoyJump
+  m_Name: SparkBoyCrouch
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1148199856, guid: 59c06eaf1a1653f40baa64d98d191fb3, type: 3}
+      value: {fileID: 1335556998, guid: 082421d8272a3df49bfd52ef8afbd4c0, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -40,7 +40,7 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -1148199856, guid: 59c06eaf1a1653f40baa64d98d191fb3, type: 3}
+    - {fileID: 1335556998, guid: 082421d8272a3df49bfd52ef8afbd4c0, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
