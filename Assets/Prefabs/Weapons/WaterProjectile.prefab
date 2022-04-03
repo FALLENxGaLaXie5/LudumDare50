@@ -62,7 +62,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 0.7397156, y: 0.52523303}
   m_EdgeRadius: 0
 --- !u!50 &5000000
 Rigidbody2D:
@@ -155,6 +155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9716d97790a0a49889284ee813194576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  regenerationFlickerColor: {r: 0, g: 0, b: 1, a: 1}
+  minRegenerationAmount: 5
+  maxRegenerationAmount: 10
   CurrentHealth: 0
   InitialHealth: 10
   MaximumHealth: 10
@@ -1047,7 +1050,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 49.49
+      scalar: 0
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -1100,7 +1103,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 30
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -3774,10 +3777,10 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 0.5}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 4
-    type: 0
-    collisionMode: 0
+    type: 1
+    collisionMode: 1
     colliderForce: 0
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
@@ -3844,9 +3847,9 @@ ParticleSystem:
         m_RotationOrder: 4
     m_Bounce:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
-      minScalar: 1
+      minScalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3953,7 +3956,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 504630016
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
