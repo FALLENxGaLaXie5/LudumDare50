@@ -567,6 +567,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BgMusicUniformMotionThereIsNoWay Sparky
       objectReference: {fileID: 0}
+    - target: {fileID: 118954, guid: 8a198e5e034d91c4081f7c7143a91b67, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 418954, guid: 8a198e5e034d91c4081f7c7143a91b67, type: 3}
       propertyPath: m_RootOrder
       value: 8
