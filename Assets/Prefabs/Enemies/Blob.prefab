@@ -712,19 +712,32 @@ MonoBehaviour:
     Transitions:
       array:
       - Decision: {fileID: 4744382631887941878}
-        TrueState: Attacking
+        TrueState: Following
         FalseState: 
-  - StateName: Attacking
+  - StateName: Following
     Actions:
       array:
       - {fileID: 4445073832459181799}
-      - {fileID: 1233995413670860396}
       - {fileID: 1019578312503192626}
     Transitions:
       array:
       - Decision: {fileID: 4744382631887941878}
         TrueState: 
         FalseState: Patrolling
+      - Decision: {fileID: 4946138248356577374}
+        TrueState: Jumping
+        FalseState: 
+  - StateName: Jumping
+    Actions:
+      array:
+      - {fileID: 1233995413670860396}
+      - {fileID: 1019578312503192626}
+      - {fileID: 4445073832459181799}
+    Transitions:
+      array:
+      - Decision: {fileID: 4946138248356577374}
+        TrueState: 
+        FalseState: Following
   BrainActive: 1
   TimeInThisState: 0
   Target: {fileID: 0}
@@ -809,7 +822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: MoveTowardsTarget
-  MinimumDistance: 1
+  MinimumDistance: 0.1
 --- !u!114 &1233995413670860396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -849,7 +862,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 5
+          m_FloatArgument: 6
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -864,6 +877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5340943293517520875}
   - component: {fileID: 4744382631887941878}
+  - component: {fileID: 4946138248356577374}
   m_Layer: 0
   m_Name: AIDecisions
   m_TagString: Untagged
@@ -900,6 +914,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Label: DetectTargetRadius
   Radius: 4
+  DetectionOriginOffset: {x: 0, y: 0, z: 0}
+  TargetLayer:
+    serializedVersion: 2
+    m_Bits: 512
+--- !u!114 &4946138248356577374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7961619083689735719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c522f668e1b331438fd11022c69a8a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Label: DetectRadiusSmall
+  Radius: 1.5
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayer:
     serializedVersion: 2
