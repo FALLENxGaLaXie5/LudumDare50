@@ -448,8 +448,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   regenerationFlickerColor: {r: 0.68592024, g: 0.78079575, b: 0.990566, a: 1}
-  minRegenerationAmount: 1
-  maxRegenerationAmount: 15
+  minRegenerationAmount: 10
+  maxRegenerationAmount: 30
   CurrentHealth: 0
   InitialHealth: 50
   MaximumHealth: 300
