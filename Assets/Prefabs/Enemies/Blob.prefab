@@ -548,7 +548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50fc24513c89140afa90465a45f5d6fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KnockbackForce: {x: 0, y: 20}
+  KnockbackForce: {x: 0, y: 10}
   DamageCausedKnockbackType: 1
   DamagePerStomp: 10
   ResetNumberOfJumpsOnStomp: 0
