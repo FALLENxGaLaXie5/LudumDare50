@@ -145,12 +145,12 @@ MonoBehaviour:
   DisableAfterUse: 1
   InputType: 2
   InputButton: Interact
-  InputKey: 119
+  InputKey: 32
   AnimationTriggerParameterName: Activating
   UseVisualPrompt: 1
   ButtonPromptPrefab: {fileID: 114235008137252218, guid: 55c13e6e2eb26cc4ba8c4873f82fb91f,
     type: 3}
-  ButtonPromptText: Press W to Light
+  ButtonPromptText: Jump in to light
   ButtonPromptColor: {r: 0.41509432, g: 0.118511476, b: 0, a: 1}
   ButtonPromptTextColor: {r: 1, g: 1, b: 1, a: 1}
   AlwaysShowPrompt: 0
