@@ -155,7 +155,7 @@ MonoBehaviour:
     Delay: 0
   - PathElementPosition: {x: 18.148804, y: 0.45672226, z: 0}
     Delay: 0
-  MovementSpeed: 10
+  MovementSpeed: 5
   AccelerationType: 0
   Acceleration:
     serializedVersion: 2
