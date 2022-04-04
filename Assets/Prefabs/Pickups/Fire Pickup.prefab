@@ -218,7 +218,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.041835785, y: -0.000067949295}
+  m_Offset: {x: 0.048054934, y: 0.49641514}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -229,7 +229,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9404068, y: 3.1281009}
+  m_Size: {x: 4.9317317, y: 4.121068}
   m_EdgeRadius: 0
 --- !u!114 &1522136909084224059
 MonoBehaviour:
@@ -248,7 +248,7 @@ MonoBehaviour:
   RequiresButtonActivationAbility: 1
   PreventJumpsWhileInThisZone: 1
   Activable: 1
-  AutoActivation: 1
+  AutoActivation: 0
   AutoActivationAndButtonInteraction: 0
   CanOnlyActivateIfGrounded: 0
   ShouldUpdateState: 1
@@ -265,11 +265,11 @@ MonoBehaviour:
   UseVisualPrompt: 1
   ButtonPromptPrefab: {fileID: 114235008137252218, guid: 55c13e6e2eb26cc4ba8c4873f82fb91f,
     type: 3}
-  ButtonPromptText: EAT ME
+  ButtonPromptText: SPACE TO CONSUME
   ButtonPromptColor: {r: 0.9882353, g: 0.049362887, b: 0, a: 1}
   ButtonPromptTextColor: {r: 0, g: 0.027117014, b: 1, a: 1}
-  AlwaysShowPrompt: 1
-  ShowPromptWhenColliding: 0
+  AlwaysShowPrompt: 0
+  ShowPromptWhenColliding: 1
   HidePromptAfterUse: 1
   PromptRelativePosition: {x: 0, y: 2, z: 0}
   ActivationFeedback: {fileID: 6436368750145253396}
