@@ -511,6 +511,7 @@ namespace MoreMountains.CorgiEngine
             if (_characterPersistence != null)
             {
                 if (_characterPersistence.Initialized)
+                if (_characterPersistence.Initialized)
                 {
                     return;
                 }
