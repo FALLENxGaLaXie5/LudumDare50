@@ -144,7 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 400004}
   - component: {fileID: 61000012506637296}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: ladderPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
