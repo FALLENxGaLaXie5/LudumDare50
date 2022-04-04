@@ -831,13 +831,13 @@ MonoBehaviour:
   MinimumInputThreshold: 0.1
   FlipCharacterIfNeeded: 1
   AutoCorrectTrajectory: 1
-  DashCooldown: 1
+  DashCooldown: 0.8
   LimitedDashes: 0
   SuccessiveDashAmount: 1
   SuccessiveDashesLeft: 1
   SuccessiveDashResetMethod: 0
   SuccessiveDashResetDuration: 2
-  InvincibleWhileDashing: 0
+  InvincibleWhileDashing: 1
 --- !u!114 &6468581836485074289
 MonoBehaviour:
   m_ObjectHideFlags: 0

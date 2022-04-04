@@ -810,8 +810,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: DetectTargetRadius
-  Radius: 2
-  DetectionOriginOffset: {x: 0, y: -3, z: 0}
+  Radius: 2.5
+  DetectionOriginOffset: {x: 0, y: -7.23, z: 0}
   TargetLayer:
     serializedVersion: 2
     m_Bits: 512
