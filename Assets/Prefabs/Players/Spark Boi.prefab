@@ -37,6 +37,7 @@ GameObject:
   - component: {fileID: 7355643658707771405}
   - component: {fileID: 3136957317311963538}
   - component: {fileID: 5025338169678431700}
+  - component: {fileID: 8905704390712310053}
   m_Layer: 9
   m_Name: Spark Boi
   m_TagString: Player
@@ -388,9 +389,9 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  WallClingingSlowFactor: 0.785
+  WallClingingSlowFactor: 0.863
   RaycastVerticalOffset: 0
-  WallClingingTolerance: 0.3
+  WallClingingTolerance: 0.79
   InputIndependent: 1
 --- !u!114 &11444118
 MonoBehaviour:
@@ -994,6 +995,27 @@ MonoBehaviour:
   BlockingConditionStates: 
   BufferDurationAfterGrip: 0.3
   InputBasedGrip: 0
+--- !u!114 &8905704390712310053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeabffc5d6e694a8287c891288b0a4be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  WallJumpForce: {x: 10, y: 4}
+  ShouldReduceNumberOfJumpsLeft: 1
+  ForceMode: 0
+  ForceFlipTowardsDirection: 0
 --- !u!1 &159142
 GameObject:
   m_ObjectHideFlags: 0
