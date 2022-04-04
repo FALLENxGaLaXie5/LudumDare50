@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 337986608997918514}
   - component: {fileID: 337986609015267058}
   - component: {fileID: 354351002821488579}
-  - component: {fileID: 765656453962749626}
   m_Layer: 0
   m_Name: FinalFireGoal
   m_TagString: Untagged
@@ -150,7 +149,7 @@ MonoBehaviour:
   UseVisualPrompt: 1
   ButtonPromptPrefab: {fileID: 114235008137252218, guid: 55c13e6e2eb26cc4ba8c4873f82fb91f,
     type: 3}
-  ButtonPromptText: Jump in to light
+  ButtonPromptText: Jump to light
   ButtonPromptColor: {r: 0.41509432, g: 0.118511476, b: 0, a: 1}
   ButtonPromptTextColor: {r: 1, g: 1, b: 1, a: 1}
   AlwaysShowPrompt: 0
@@ -194,18 +193,6 @@ MonoBehaviour:
   OnStay:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &765656453962749626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337986609019275790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70e9c30eea5416b44baad7b261341efd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4752207195551389571
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,8 +295,9 @@ GameObject:
   - component: {fileID: 6661657393933241395}
   - component: {fileID: 3739154314026409503}
   - component: {fileID: 8043358536646098326}
+  - component: {fileID: 8636888341021352227}
   m_Layer: 0
-  m_Name: CameraMoveFeedback
+  m_Name: ActivationFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -345,6 +333,7 @@ MonoBehaviour:
   Feedbacks:
   - {fileID: 3739154314026409503}
   - {fileID: 8043358536646098326}
+  - {fileID: 8636888341021352227}
   InitializationMode: 2
   SafeMode: 3
   Direction: 0
@@ -434,7 +423,7 @@ MonoBehaviour:
   Chance: 100
   Timing:
     TimescaleMode: 0
-    InitialDelay: 0
+    InitialDelay: 5
     CooldownDuration: 0
     ExcludeFromHoldingPauses: 0
     InterruptsOnStop: 1
@@ -488,6 +477,53 @@ MonoBehaviour:
   TargetTransform: {fileID: 0}
   TargetPosition: {x: 0, y: 0, z: 0}
   PositionOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &8636888341021352227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5449357701399651725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a102c1a91e34644aa37f1e4f00c31a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  Label: Events
+  Chance: 100
+  Timing:
+    TimescaleMode: 0
+    InitialDelay: 10
+    CooldownDuration: 0
+    ExcludeFromHoldingPauses: 0
+    InterruptsOnStop: 1
+    NumberOfRepeats: 0
+    RepeatForever: 0
+    DelayBetweenRepeats: 1
+    MMFeedbacksDirectionCondition: 0
+    PlayDirection: 0
+    ConstantIntensity: 0
+    UseIntensityInterval: 0
+    IntensityIntervalMin: 0
+    IntensityIntervalMax: 0
+    Sequence: {fileID: 0}
+    TrackID: 0
+    Quantized: 0
+    TargetBPM: 120
+  DebugActive: 0
+  PlayEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  StopEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  InitializationEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  ResetEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &5129368733993759277
 PrefabInstance:
   m_ObjectHideFlags: 0
