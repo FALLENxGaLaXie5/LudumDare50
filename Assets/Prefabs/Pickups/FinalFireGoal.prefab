@@ -443,7 +443,7 @@ MonoBehaviour:
   DebugActive: 0
   FadeType: 0
   ID: 0
-  Duration: 2
+  Duration: 3
   Curve:
     MMTweenDefinitionType: 1
     MMTweenCurve: 4
@@ -494,7 +494,7 @@ MonoBehaviour:
   Chance: 100
   Timing:
     TimescaleMode: 0
-    InitialDelay: 10
+    InitialDelay: 8
     CooldownDuration: 0
     ExcludeFromHoldingPauses: 0
     InterruptsOnStop: 1

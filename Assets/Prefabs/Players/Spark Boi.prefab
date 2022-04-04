@@ -447,7 +447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9716d97790a0a49889284ee813194576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  regenerationFlickerColor: {r: 0, g: 0, b: 1, a: 1}
+  regenerationFlickerColor: {r: 0.68592024, g: 0.78079575, b: 0.990566, a: 1}
   minRegenerationAmount: 1
   maxRegenerationAmount: 15
   CurrentHealth: 0
@@ -460,7 +460,7 @@ MonoBehaviour:
   DamageFeedbacks: {fileID: 1159074697136316710}
   FeedbackIsProportionalToDamage: 1
   FlickerSpriteOnHit: 1
-  FlickerColor: {r: 1, g: 0.078431375, b: 0.078431375, a: 1}
+  FlickerColor: {r: 0.1509434, g: 0.00056958647, b: 0.00056958647, a: 1}
   ImmuneToKnockback: 0
   DeathFeedbacks: {fileID: 1527780577824011739}
   DestroyOnDeath: 1
