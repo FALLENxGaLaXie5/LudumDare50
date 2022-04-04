@@ -1,5 +1,6 @@
 ﻿using MoreMountains.CorgiEngine;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterDeathAbility : CharacterAbility
 {
@@ -9,5 +10,7 @@ public class CharacterDeathAbility : CharacterAbility
     {
         base.OnDeath();
         deathEvent.Raise();
+        Scene scene = SceneManager.GetActiveScene(); 
+        SceneManager.LoadScene(scene.name);
     }
 }
