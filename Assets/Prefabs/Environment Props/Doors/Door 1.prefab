@@ -260,7 +260,7 @@ MonoBehaviour:
   InputKey: 32
   AnimationTriggerParameterName: 
   UseVisualPrompt: 1
-  ButtonPromptPrefab: {fileID: 114235008137252218, guid: bb1fc0f1f16f31248b9b4d80aa795609,
+  ButtonPromptPrefab: {fileID: 114235008137252218, guid: 55c13e6e2eb26cc4ba8c4873f82fb91f,
     type: 3}
   ButtonPromptText: Space
   ButtonPromptColor: {r: 0.9882353, g: 0.12174541, b: 0, a: 1}
