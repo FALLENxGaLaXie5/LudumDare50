@@ -45,11 +45,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Destination: {fileID: 400004}
-  Projectile: {fileID: 4111967911655602417, guid: 14d7a42707112044098f946525bdfe5b,
+  Projectile: {fileID: 156733878225094603, guid: 14d7a42707112044098f946525bdfe5b,
     type: 3}
   SpawnEffect: {fileID: 6582423192425468832, guid: 0a711421207961742a09df5673948988,
     type: 3}
   Speed: 1
+  minFireRate: 1
   FireRate: 1
 --- !u!1 &100002
 GameObject:
