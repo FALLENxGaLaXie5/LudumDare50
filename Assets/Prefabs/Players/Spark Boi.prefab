@@ -6325,7 +6325,7 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  SoundFX: {fileID: 8300000, guid: 9e8359aaf2a898547a84eda9b3349a6c, type: 3}
+  SoundFX: {fileID: 8300000, guid: 1248eebfaccedc342a9750d691e1f625, type: 3}
   Loop: 0
 --- !u!1 &6182029088227434004
 GameObject:
@@ -6877,7 +6877,7 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  SoundFX: {fileID: 8300000, guid: 9e8359aaf2a898547a84eda9b3349a6c, type: 3}
+  SoundFX: {fileID: 8300000, guid: 1248eebfaccedc342a9750d691e1f625, type: 3}
   Loop: 0
 --- !u!1001 &2020554819432788090
 PrefabInstance:
