@@ -117,6 +117,7 @@ GameObject:
   - component: {fileID: 7136636597957951794}
   - component: {fileID: 7195890054870509860}
   - component: {fileID: 7102557842215961848}
+  - component: {fileID: 2818466764316627023}
   m_Layer: 0
   m_Name: DialogueZone
   m_TagString: Untagged
@@ -163,7 +164,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.06, y: 0.63}
+  m_Size: {x: 1, y: 0.63}
   m_EdgeRadius: 0
 --- !u!114 &7102557842215961848
 MonoBehaviour:
@@ -232,10 +233,22 @@ MonoBehaviour:
   BoxesFollowZone: 0
   CanMoveWhileTalking: 1
   ButtonHandled: 1
-  MessageDuration: 3
+  MessageDuration: 2
   ActivableMoreThanOnce: 1
-  InactiveTime: 2
+  InactiveTime: 1
   Dialogue:
   - Hello little flame.
   - "This fire needs to be reignited. You can act as fuel \nand start it up again!"
   - "But the way you are now, it wouldn't be a very \nimpressive flame."
+--- !u!114 &2818466764316627023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7135906678062081564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70e9c30eea5416b44baad7b261341efd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

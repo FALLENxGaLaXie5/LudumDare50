@@ -894,7 +894,7 @@ MonoBehaviour:
   AbilityPermitted: 1
   BlockingMovementStates: 
   BlockingConditionStates: 
-  PreventJumpWhenInZone: 1
+  PreventJumpWhenInZone: 0
   ActivationCooldownDuration: 0
 --- !u!114 &854254821264085734
 MonoBehaviour:

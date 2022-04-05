@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 337986608997918514}
   - component: {fileID: 337986609015267058}
   - component: {fileID: 354351002821488579}
+  - component: {fileID: 5344749826530186256}
   m_Layer: 0
   m_Name: FinalFireGoal
   m_TagString: Untagged
@@ -127,17 +128,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9bc48148c07a804a85950d44daf8b21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonActivatedRequirement: 0
+  ButtonActivatedRequirement: 2
   RequiresPlayerType: 1
   RequiresButtonActivationAbility: 1
   PreventJumpsWhileInThisZone: 1
   Activable: 1
   AutoActivation: 0
   AutoActivationAndButtonInteraction: 0
-  CanOnlyActivateIfGrounded: 1
+  CanOnlyActivateIfGrounded: 0
   ShouldUpdateState: 1
   OnlyOneActivationAtOnce: 1
-  AlsoPerformChecksOnStay: 0
+  AlsoPerformChecksOnStay: 1
   UnlimitedActivations: 0
   MaxNumberOfActivations: 1
   DelayBetweenUses: 0
@@ -193,6 +194,18 @@ MonoBehaviour:
   OnStay:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5344749826530186256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337986609019275790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70e9c30eea5416b44baad7b261341efd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4752207195551389571
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,7 +436,7 @@ MonoBehaviour:
   Chance: 100
   Timing:
     TimescaleMode: 0
-    InitialDelay: 5
+    InitialDelay: 3
     CooldownDuration: 0
     ExcludeFromHoldingPauses: 0
     InterruptsOnStop: 1
@@ -494,7 +507,7 @@ MonoBehaviour:
   Chance: 100
   Timing:
     TimescaleMode: 0
-    InitialDelay: 8
+    InitialDelay: 6
     CooldownDuration: 0
     ExcludeFromHoldingPauses: 0
     InterruptsOnStop: 1
